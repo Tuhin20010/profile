@@ -146,7 +146,7 @@ nav {
 /* Content Section Styling */
 .main {
 
-    background: radial-gradient(circle, rgba(14, 20, 20, 0.096), transparent);
+    background: linear-gradient(135deg, #0e0e1b, #0a0b0d,transparent 75%);
     color: #ffffff;
     position: relative;
     overflow: hidden;
@@ -156,6 +156,7 @@ nav {
 
 
     z-index: 0;
+    
     animation: neonGlow 6s infinite linear;
 }
 

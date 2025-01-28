@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+
+            background-color: #1a1a2e;
+        }
+        .Banner {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+
+        }
+
+        .gallery {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(5, 200px);
+            grid-template-rows: repeat(5, 120px);
+            gap: 10px;
+            align-items: center;
+            font-size: larger;
+
+        }
+
+        .gallery .main {
+            grid-column: 2 / 5;
+            grid-row: 2 / 5;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: large;
+        }
+
+        .gallery .main img:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(2);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="Image_galary.html">Image Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Banner">
+        <h1>Tuhin's Gallery 2020-2025</h1>
+    </div>
+    <div class="gallery">
+        <!-- Top Row -->
+        <img src="images/BCA group.jpg" alt="Image 1">
+        <img src="images/Group2BCA.jpg" alt="Image 2">
+        <img src="images/group pic.jpg" alt="Image 3">
+        <img src="images/BCA2.jpg" alt="Image 4">
+
+        <!-- Middle Left -->
+        <img src="images/Trio BCA.jpg" alt="Image 5">
+
+        <!-- Main Image -->
+        <div class="main">
+            <img src="images/My1.jpg" alt="Main Image">
+        </div>
+
+        <!-- Middle Right -->
+        <img src="images/My2.jpg" alt="Image 6">
+
+        <!-- Bottom Row -->
+        <img src="images/Adda.jpg" alt="Image 7">
+        <img src="images/Trio_KNU.jpg" alt="Image 8">
+        <img src="images/Fresher1.jpg" alt="Image 9">
+        <img src="images/KNU_boys.jpg" alt="Image 10">
+        <img src="images/Exam_end.jpg" alt="Image 10">
+        <img src="images/KNU_boys2.jpg" alt="Image 10">
+        <!-- Left Column -->
+        <img src="images/KNU_subrata.jpg" alt="Image 11" style="grid-column: 1; grid-row: 2;">
+        <img src="images/KNU_dopen.jpg" alt="Image 12" style="grid-column: 1; grid-row: 4;">
+
+        <!-- Right Column -->
+        <img src="images/Movie.jpg" alt="Image 13" style="grid-column: 5; grid-row: 2;">
+        <img src="images/KNU_boys1.jpg" alt="Image 14" style="grid-column: 5; grid-row: 4;">
+    </div>
+    <footer>
+        <p>&copy; 2024 Tuhin Pratihar</p>
+        <div class="social-links">
+            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="mail.png"
+                    alt="email"></a>
+            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img
+                    src="linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img src="instagram.png"
+                    alt="instagram"></a>
+            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="github.png"
+                    alt="github"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

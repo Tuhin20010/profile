@@ -1,33 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    .flowchart {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .flowchart-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        background: #007bff;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 170px;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .box b {
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .arrow {
+        margin: 0 5px;
+    }
+    #extra{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .flowchart-container {
+            flex-direction: column;
+        }
+
+        .arrow {
+            width: 2px;
+            height: 20px;
+            background: #007bff;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 250px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .box {
+            width: 150px;
+            padding: 8px 10px;
+        }
+
+        .arrow {
+            margin: 0 8px;
+        }
+    }
+
+</style>
+
 <body>
     <header>
         <nav>
             <ul class="navbar">
                 <li><a href="portfolio.html">Home</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#gallery">Image Gallery</a></li>
+                <li><a href="Image_galary.html">Image Gallery</a></li>
+                <li><a href="project2.html">Project2</a></li>
             </ul>
         </nav>
     </header>
-    <h2>Project1</h2>
+    <div>
+        <br><br>
+        <h2>STUDENT PERFORMANCE PREDICTION AND ANALYSIS</h2>
+        <div class="project">
+            <table>
+                <tr>
+                    <td><strong>Description:</strong></td>
+                    <td>This project aims to predict and analyze student performance using a machine learning workflow.
+                        The process includes data collection, cleaning, exploratory data analysis (EDA), feature
+                        engineering, model training,
+                        evaluation, and deployment. The goal is to provide actionable insights into student performance
+                        and suggest
+                        interventions to improve outcomes.</td>
+
+                </tr>
+                <tr>
+                    <td><strong>Workflow</strong></td>
+                    <td>
+                        <div class="flowchart">
+                            <div class="flowchart-container">
+                                <div class="box"> Data Collection <br>
+                                    <b>(from source)</b>
+                                </div>
+                                <div class="arrow"><b>&#8594</b></div>
+                                <div class="box">Data Preprocessing <br>
+                                    <b>(clean & transform)</b>
+                                </div>
+                                <div class="arrow"><b>&#8594</b></div>
+                                <div class="box">Data Visualization <br>
+                                    <b>(extract relations)</b>
+                                </div>
+                                <div class="arrow"><b>&#8594</b></div>
+                                <div class="box">Model Training & Testing</div>
+                                <div class="arrow"><b>&#8594</b></div>
+                                <div class="box">Model Evaluation <br>
+                                    <b>(evaluating best model)</b>
+                                </div>
+                                <div class="arrow"><b>&#8594</b></div>
+                                <div class="box">Model Deployment <br>
+                                    <b>(deploye the model)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Technologies Used:</strong></td>
+                    <td>
+                        <ul>
+                            <li><strong>Python 3.9:</strong> Used for data preprocessing, EDA, and machine learning
+                                model development.</li>
+                            <li><strong>NumPy and Pandas:</strong> For handling and analyzing structured data
+                                efficiently.</li>
+                            <li><strong>Seaborn and Matplotlib:</strong> For visualizing patterns and trends in the
+                                dataset.</li>
+                            <li><strong>Scikit-learn:</strong> For training and evaluating machine learning models.</li>
+                            <li><strong>Flask:</strong> A lightweight web framework used to deploy the machine learning
+                                model as an API.</li>
+                            <li><strong>HTML, CSS, and JavaScript:</strong> To create an interactive and user-friendly
+                                web interface for the application.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Team Collaboration:</strong></td>
+                    <td>Collaborated with a team of five members. Led the team to successfully execute the project by
+                        assigning roles, tracking progress, and ensuring timely completion of milestones. Promoted
+                        effective communication
+                        and collaboration to achieve project goals.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="extra">
+        <p><strong>Extra work: </strong>Write a Research Paper on this Project named <Strong>"Optimizing Student Performance Prediction: A
+            Comparative Analysis Using Machine Learning"</Strong></p>
+        <p><strong> Submitted on IEEE conferance </strong>at "Asansol engineering College"</p>
+        <p><strong>Achievement: Best Paper award for my paper</strong> <a href="https://drive.google.com/file/d/1sFVv0VscsbtbPJxFw47EkegYPksPM-48/view?usp=sharing"
+            target="_blank" class="certificate-link">View Certificate</a></p>
+    </div>
     <footer>
         <p>&copy; 2024 Tuhin Pratihar</p>
         <div class="social-links">
-            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="mail.png" alt="email"></a>
-            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img src="linkedin.png" alt=""></a>
-            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img src="instagram.png" alt="instagram"></a>
-            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="github.png" alt="github"></a>
+            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="mail.png"
+                    alt="email"></a>
+            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img
+                    src="linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img src="instagram.png"
+                    alt="instagram"></a>
+            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="github.png"
+                    alt="github"></a>
+            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="Whatsapp.png" alt="whatsapp"></a>
         </div>
     </footer>
 </body>
+
 </html>

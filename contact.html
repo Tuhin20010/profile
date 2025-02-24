@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Me - Tuhin Pratihar</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="../images/Tuhin.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul class="navbar">
@@ -19,22 +18,35 @@
                 <li><a href="skill.html">Skills</a></li>
                 <li><a href="project1.html">Projects</a></li>
                 <li><a href="Achievement.html">Achievements</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="Image_galary.html">Image Gallery</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-info">
-                <img src="./images/Tuhin.jpg" alt="Your Photo" class="hero-photo">
-                <h2>Mr. Tuhin Pratihar</h2>
-                <b>Post Graduate Student, Python Developer</b>
-            </div>
-            <p id="typing-text"> </p>
+    <section class="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaboration..</p>
+
+            <ul class="contact-details">
+                <li><strong>Location:</strong> Jhargram, West Bengal, India, 721505</li>
+                <li><strong>Email:</strong> <a href="mailto:tuhin86edu@gmail.com" class="contact-link">tuhin86edu@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+919883905336" class="contact-link">+91 9883905336</a></li>
+                <li><strong>Whatsapp:</strong> <a href="https://wa.me/9883905336" target="_blank" class="contact-link">Chat on WhatsApp</a></li>
+            </ul>
+
+            <h3>Send a Message</h3>
+            <form action="#" method="POST" class="contact-form">
+                <center>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea> <br> <br>
+                <button type="submit" class="btn">Send Message</button>
+                </center>
+            </form>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Tuhin Pratihar</p>
         <div class="social-links">
@@ -46,26 +58,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const text = "Machine Learning & Python Enthusiast";
-
-            const typingElement = document.getElementById("typing-text");
-            let index = 0;
-
-            function typeText() {
-                if (index < text.length) {
-                    typingElement.textContent += text.charAt(index);
-                    index++;
-                    setTimeout(typeText, 50);
-                }
-            }
-
-            typeText();
-        });
-
-
-    </script>
 </body>
 
 </html>

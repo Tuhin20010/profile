@@ -361,12 +361,6 @@ footer p {
     }
 }
 
-
-
-
-/* Contact */
-
-
 /* Contact Section */
 .contact {
     display: flex;
@@ -458,3 +452,107 @@ footer p {
         padding: 20px;
     }
 }
+
+/* ===== EXPERIENCE SECTION ===== */
+/* ===== EXPERIENCE SECTION ===== */
+/* ===== EXPERIENCE SECTION ===== */
+#experience {
+    position: relative;
+    padding: 60px 20px;
+    background: #0b0125; /* deep night background */
+    text-align: center;
+    overflow: hidden; /* hide stars outside */
+}
+
+/* Heading */
+#experience .hero-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+#experience .hero-info .subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+/* Experience container */
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr; /* mobile = single column */
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Responsive: 2 columns on wider screens */
+@media (min-width: 768px) {
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Each experience card */
+.experience-card {
+    background: rgba(0, 165, 137, 0.15);
+    padding: 18px 22px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-card h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #21db00;
+}
+
+.experience-card p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #00edf1;
+    line-height: 1.5;
+}
+
+.experience-card .duration {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #33ff00;
+    margin: 6px 0 10px;
+}
+
+/* ===== SHOOTING STAR ANIMATION ===== */
+.star {
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(white, transparent);
+    opacity: 0.8;
+    transform: rotate(45deg);
+    animation: shootingStar 3s linear infinite;
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(300px) translateY(600px) rotate(45deg);
+        opacity: 0;
+    }
+}
+

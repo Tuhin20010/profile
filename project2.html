@@ -18,10 +18,12 @@
 <body>
     <header>
         <nav>
-            <ul class="navbar">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="navbar" id="navbar">
                 <li><a href="portfolio.html">Home</a></li>
                 <li><a href="Image_galary.html">Image Gallery</a></li>
                 <li><a href="project1.html">Project1</a></li>
+                <li><a href="project3.html">Project3</a></li>
             </ul>
         </nav>
     </header>
@@ -72,7 +74,7 @@
     <div id="extra">
         <p><strong>Extra work:</p>
         <p><strong>1. Documentation & Reporting:</strong>Created detailed documentation, including SRS, UI/UX designs, and testing reports.</p>
-        <p><strong>Version Control: Used Git for efficient code management and tracking changes.</strong> <a href="https://drive.google.com/file/d/1sFVv0VscsbtbPJxFw47EkegYPksPM-48/view?usp=sharing"
+        <p><strong>Version Control: Used Git for efficient code management and tracking changes.</strong> <a href=""
             target="_blank" class="certificate-link">View SRS</a></p>
     </div>
     
@@ -86,6 +88,11 @@
             <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png" alt="whatsapp"></a>
         </div>
     </footer>
+    <script>
+        document.getElementById("menu-toggle").onclick = function () {
+            document.getElementById("navbar").classList.toggle("show");
+        };
+    </script>
 </body>
 
 </html>

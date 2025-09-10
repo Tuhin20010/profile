@@ -41,7 +41,8 @@
     .arrow {
         margin: 0 5px;
     }
-    #extra{
+
+    #extra {
         text-align: left;
         margin-left: 10px;
     }
@@ -74,16 +75,17 @@
             margin: 0 8px;
         }
     }
-
 </style>
 
 <body>
     <header>
         <nav>
-            <ul class="navbar">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="navbar" id="navbar">
                 <li><a href="portfolio.html">Home</a></li>
                 <li><a href="Image_galary.html">Image Gallery</a></li>
                 <li><a href="project2.html">Project2</a></li>
+                <li><a href="project3.html">Project3</a></li>
             </ul>
         </nav>
     </header>
@@ -161,22 +163,34 @@
         </div>
     </div>
     <div id="extra">
-        <p><strong>Extra work: </strong>Write a Research Paper on this Project named <Strong>"Optimizing Student Performance Prediction: A
-            Comparative Analysis Using Machine Learning"</Strong></p>
+        <p><strong>Extra work: </strong>Write a Research Paper on this Project named <Strong>"Optimizing Student
+                Performance Prediction: A
+                Comparative Analysis Using Machine Learning"</Strong></p>
         <p><strong> Submitted on IEEE conferance </strong>at "Asansol engineering College"</p>
-        <p><strong>Achievement: Best Paper award for my paper</strong> <a href="https://drive.google.com/file/d/1sFVv0VscsbtbPJxFw47EkegYPksPM-48/view?usp=sharing"
-            target="_blank" class="certificate-link">View Certificate</a></p>
+        <p><strong>Achievement: Best Paper award for my paper</strong> <a
+                href="https://drive.google.com/file/d/1sFVv0VscsbtbPJxFw47EkegYPksPM-48/view?usp=sharing"
+                target="_blank" class="certificate-link">View Certificate</a></p>
     </div>
     <footer>
         <p>&copy; 2024 Tuhin Pratihar</p>
         <div class="social-links">
-            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="./images/mail.png" alt="email"></a>
-            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img src="./images/linkedin.png" alt=""></a>
-            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img src="./images/instagram.png" alt="instagram"></a>
-            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="./images/github.png" alt="github"></a>
-            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png" alt="whatsapp"></a>
+            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="./images/mail.png"
+                    alt="email"></a>
+            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img
+                    src="./images/linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img
+                    src="./images/instagram.png" alt="instagram"></a>
+            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="./images/github.png"
+                    alt="github"></a>
+            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png"
+                    alt="whatsapp"></a>
         </div>
     </footer>
+    <script>
+        document.getElementById("menu-toggle").onclick = function () {
+            document.getElementById("navbar").classList.toggle("show");
+        };
+    </script>
 </body>
 
 </html>

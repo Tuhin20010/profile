@@ -8,11 +8,116 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-#extra{
+    #extra {
         text-align: left;
         margin-left: 10px;
     }
+    .project {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 1100px;
+    }
 
+    .project table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .project td {
+        padding: 15px;
+        vertical-align: top;
+    }
+
+    .project td:first-child {
+        width: 200px;
+        font-weight: bold;
+        color: #1a1a2e;
+    }
+
+    /* Workflow Image */
+    .project img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* List Styling */
+    .project ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .project li {
+        margin-bottom: 8px;
+    }
+
+    /* ===== Extra Work Section ===== */
+    #extra {
+        margin: 20px auto;
+        max-width: 1100px;
+        padding: 20px;
+        border-left: 5px solid #00b4d8;
+        border-radius: 5px;
+    }
+
+    #extra p {
+        margin: 10px 0;
+        text-align: justify;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 1024px) {
+        .project td:first-child {
+            width: 180px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .project table,
+        .project tr,
+        .project td {
+            display: block;
+            width: 100%;
+        }
+
+        .project td:first-child {
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        .project img {
+            margin: 15px 0 10px -20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .project td {
+            padding: 10px;
+        }
+
+        .project td:first-child {
+            font-size: 1rem;
+        }
+
+        #extra {
+            padding: 15px;
+            font-size: 0.95rem;
+        }
+    }
+    strong{
+        color: white;
+    }
 </style>
 
 <body>
@@ -34,34 +139,39 @@
             <table>
                 <tr>
                     <td><strong>Description:</strong></td>
-                    <td style="text-align: justify;">The "Smart Bus Management System" is a web-based application that allows users to search for buses based on source and 
+                    <td style="text-align: justify;">The "Smart Bus Management System" is a web-based application that
+                        allows users to search for buses based on source and
                         destination without registration. Bus owners can register, log in, and manage bus details,
-                         including updating schedules. The system stores bus information such as bus number, name, 
-                         stops, departure, and arrival times. It features sorting options and an intuitive UI for easy
-                          navigation. Developed using Flask, SQLite, HTML, CSS, JavaScript, and responsive design,
-                           this project enhances public transport accessibility by streamlining bus scheduling and search
-                            functionality. It ensures efficient management and a seamless experience for both passengers
-                             and bus operators.</td>
+                        including updating schedules. The system stores bus information such as bus number, name,
+                        stops, departure, and arrival times. It features sorting options and an intuitive UI for easy
+                        navigation. Developed using Flask, SQLite, HTML, CSS, JavaScript, and responsive design,
+                        this project enhances public transport accessibility by streamlining bus scheduling and search
+                        functionality. It ensures efficient management and a seamless experience for both passengers
+                        and bus operators.</td>
 
                 </tr>
                 <tr>
-                    <td><strong>Workflow</strong></td>
+                    <td><strong >Workflow</strong></td>
                     <td>
-                       <img src="./images/Diagram.jpg" alt="Diagram" height="300px" width="600px" style="margin-left: 300px;">
+                        <img src="./images/Diagram.jpg" alt="Diagram">
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Technologies Used:</strong></td>
+                    <td><strong >Technologies Used:</strong></td>
                     <td>
                         <ul>
-                            <li><strong>Frontend:</strong> Developed using HTML, CSS, and Bootstrap for responsive UI design, with JavaScript for dynamic content updates.</li>
-                            <li><strong>Backend:</strong> Flask For server-side logic and Jinja2 For template rendering</li>
+                            <li><strong>Frontend:</strong> Developed using HTML, CSS, and Bootstrap for responsive UI
+                                design, with JavaScript for dynamic content updates.</li>
+                            <li><strong>Backend:</strong> Flask For server-side logic and Jinja2 For template rendering
+                            </li>
                             <li><strong>Database: </strong> No SQL databse MongoDB use to handle data efficiently.</li>
-                            <li><strong>Security & Optimization:</strong> Flask Sessions For user authentication and Form Validations to prevent invalid inputs</li>
-                            <li><strong>Additional Tool:</strong> RESTful API for handling client-server interactions.</li>
+                            <li><strong>Security & Optimization:</strong> Flask Sessions For user authentication and
+                                Form Validations to prevent invalid inputs</li>
+                            <li><strong>Additional Tool:</strong> RESTful API for handling client-server interactions.
+                            </li>
 
                         </ul>
-                        
+
                     </td>
                 </tr>
                 <tr>
@@ -73,19 +183,25 @@
     </div>
     <div id="extra">
         <p><strong>Extra work:</p>
-        <p><strong>1. Documentation & Reporting:</strong>Created detailed documentation, including SRS, UI/UX designs, and testing reports.</p>
+        <p><strong>1. Documentation & Reporting:</strong>Created detailed documentation, including SRS, UI/UX designs,
+            and testing reports.</p>
         <p><strong>Version Control: Used Git for efficient code management and tracking changes.</strong> <a href=""
-            target="_blank" class="certificate-link">View SRS</a></p>
+                target="_blank" class="certificate-link">View SRS</a></p>
     </div>
-    
+
     <footer>
         <p>&copy; 2024 Tuhin Pratihar</p>
         <div class="social-links">
-            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="./images/mail.png" alt="email"></a>
-            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img src="./images/linkedin.png" alt=""></a>
-            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img src="./images/instagram.png" alt="instagram"></a>
-            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="./images/github.png" alt="github"></a>
-            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png" alt="whatsapp"></a>
+            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="./images/mail.png"
+                    alt="email"></a>
+            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img
+                    src="./images/linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img
+                    src="./images/instagram.png" alt="instagram"></a>
+            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="./images/github.png"
+                    alt="github"></a>
+            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png"
+                    alt="whatsapp"></a>
         </div>
     </footer>
     <script>

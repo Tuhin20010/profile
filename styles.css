@@ -199,7 +199,6 @@ nav {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
     z-index: 1;
 }
 
@@ -256,12 +255,15 @@ nav {
         text-align: center;
         margin: 20px 0;
     }
+    .hero-photo{
+       margin-top: 50px;
+    }
 }
 
 footer {
     background-color: #1a1a2e;
     color: #ffffff;
-    padding: 20px;
+    padding: 20px 40px;
     text-align: center;
     font-size: 1rem;
 }

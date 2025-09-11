@@ -100,7 +100,8 @@
             .gallery .main img:hover {
                 transform: none !important;
             }
-            .Banner{
+
+            .Banner {
                 margin-top: 50px;
             }
         }
@@ -198,6 +199,12 @@
     <script>
         document.getElementById("menu-toggle").onclick = function () {
             document.getElementById("navbar").classList.toggle("show");
+        };
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.key === "u" || e.key === "c" || e.key === "s")) {
+                e.preventDefault();
+            }
         };
     </script>
 </body>

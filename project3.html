@@ -7,10 +7,10 @@
     <title>Patient Classification ML Project</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        #extra{
-        text-align: left;
-        margin-left: 10px;
-    }
+        #extra {
+            text-align: left;
+            margin-left: 10px;
+        }
     </style>
 </head>
 
@@ -67,47 +67,48 @@
         </div>
         <h2 id="results">Results & Analysis</h2>
 
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
-    <thead style="background: #1a1a2e; color: #fff;">
-        <tr>
-            <th>Model</th>
-            <th>Accuracy</th>
-            <th>Precision</th>
-            <th>Recall</th>
-            <th>F1-Score</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Random Forest</td>
-            <td>82.18%</td>
-            <td>0.7707</td>
-            <td>0.8218</td>
-            <td>0.7608</td>
-        </tr>
-        <tr>
-            <td>XGBoost</td>
-            <td>82.18%</td>
-            <td>0.7772</td>
-            <td>0.8218</td>
-            <td>0.7759</td>
-        </tr>
-        <tr>
-            <td>SVM</td>
-            <td>82.76%</td>
-            <td>0.8575</td>
-            <td>0.8276</td>
-            <td>0.7550</td>
-        </tr>
-        <tr>
-            <td>Stacking Classifier</td>
-            <td>82.18%</td>
-            <td>0.6754</td>
-            <td>0.8218</td>
-            <td>0.7415</td>
-        </tr>
-    </tbody>
-</table>
+        <table border="1" cellpadding="8" cellspacing="0"
+            style="border-collapse: collapse; width: 100%; text-align: center;">
+            <thead style="background: #1a1a2e; color: #fff;">
+                <tr>
+                    <th>Model</th>
+                    <th>Accuracy</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>82.18%</td>
+                    <td>0.7707</td>
+                    <td>0.8218</td>
+                    <td>0.7608</td>
+                </tr>
+                <tr>
+                    <td>XGBoost</td>
+                    <td>82.18%</td>
+                    <td>0.7772</td>
+                    <td>0.8218</td>
+                    <td>0.7759</td>
+                </tr>
+                <tr>
+                    <td>SVM</td>
+                    <td>82.76%</td>
+                    <td>0.8575</td>
+                    <td>0.8276</td>
+                    <td>0.7550</td>
+                </tr>
+                <tr>
+                    <td>Stacking Classifier</td>
+                    <td>82.18%</td>
+                    <td>0.6754</td>
+                    <td>0.8218</td>
+                    <td>0.7415</td>
+                </tr>
+            </tbody>
+        </table>
 
 
         <h2 id="results">Results & Analysis</h2>
@@ -126,9 +127,11 @@
     </main>
     <div id="extra">
         <p><strong>Extra work:</p>
-        <p><strong>1. Documentation & Reporting:</strong>Created detailed documentation, including DFD, UI/UX designs, and testing reports.</p>
-        <p><strong>Version Control: Used Git for efficient code management and tracking changes.</strong> <a href="https://drive.google.com/file/d/1Pl2Gsq8b3Zf0Ey57H0eSwhsiay1JlzMd/view?usp=sharing"
-            target="_blank" class="certificate-link">View SRS</a></p>
+        <p><strong>1. Documentation & Reporting:</strong>Created detailed documentation, including DFD, UI/UX designs,
+            and testing reports.</p>
+        <p><strong>Version Control: Used Git for efficient code management and tracking changes.</strong> <a
+                href="https://drive.google.com/file/d/1Pl2Gsq8b3Zf0Ey57H0eSwhsiay1JlzMd/view?usp=sharing"
+                target="_blank" class="certificate-link">View SRS</a></p>
     </div>
     <footer>
         <p>&copy; 2024 Patient Classification ML Project | Developed by Tuhin Pratihar</p>
@@ -137,6 +140,12 @@
     <script>
         document.getElementById("menu-toggle").onclick = function () {
             document.getElementById("navbar").classList.toggle("show");
+        };
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.key === "u" || e.key === "c" || e.key === "s")) {
+                e.preventDefault();
+            }
         };
     </script>
 </body>

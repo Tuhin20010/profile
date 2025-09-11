@@ -32,18 +32,20 @@
 
             <ul class="contact-details">
                 <li><strong>Location:</strong> Jhargram, West Bengal, India, 721505</li>
-                <li><strong>Email:</strong> <a href="mailto:tuhin86edu@gmail.com" class="contact-link">tuhin86edu@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:tuhin86edu@gmail.com"
+                        class="contact-link">tuhin86edu@gmail.com</a></li>
                 <li><strong>Phone:</strong> <a href="tel:+919883905336" class="contact-link">+91 9883905336</a></li>
-                <li><strong>Whatsapp:</strong> <a href="https://wa.me/9883905336" target="_blank" class="contact-link">Chat on WhatsApp</a></li>
+                <li><strong>Whatsapp:</strong> <a href="https://wa.me/9883905336" target="_blank"
+                        class="contact-link">Chat on WhatsApp</a></li>
             </ul>
 
             <h3>Send a Message</h3>
             <form action="#" method="POST" class="contact-form">
                 <center>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea> <br> <br>
-                <button type="submit" class="btn">Send Message</button>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea> <br> <br>
+                    <button type="submit" class="btn">Send Message</button>
                 </center>
             </form>
         </div>
@@ -52,16 +54,27 @@
     <footer>
         <p>&copy; 2024 Tuhin Pratihar</p>
         <div class="social-links">
-            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="./images/mail.png" alt="email"></a>
-            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img src="./images/linkedin.png" alt=""></a>
-            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img src="./images/instagram.png" alt="instagram"></a>
-            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="./images/github.png" alt="github"></a>
-            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png" alt="whatsapp"></a>
+            <a href="mailto:tuhin86edu@gmail.com" target="_blank" class="social-icon"><img src="./images/mail.png"
+                    alt="email"></a>
+            <a href="https://www.linkedin.com/in/tuhin-pratihar" target="_blank" class="social-icon"><img
+                    src="./images/linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/its_tuhi_n" target="_blank" class="social-icon"><img
+                    src="./images/instagram.png" alt="instagram"></a>
+            <a href="https://github.com/Tuhin20010" target="_blank" class="social-icon"><img src="./images/github.png"
+                    alt="github"></a>
+            <a href=" https://wa.me/9883905336" target="_blank" class="social-icon"><img src="./images/Whatsapp.png"
+                    alt="whatsapp"></a>
         </div>
     </footer>
-<script>
+    <script>
         document.getElementById("menu-toggle").onclick = function () {
             document.getElementById("navbar").classList.toggle("show");
+        };
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.key === "u" || e.key === "c" || e.key === "s")) {
+                e.preventDefault();
+            }
         };
     </script>
 </body>
